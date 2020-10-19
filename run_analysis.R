@@ -103,5 +103,6 @@ X2 <- X %>%
     group_by(subject, activity) %>%
     summarise_all("mean")
 
+#Now write the dataframes out as csv files
 write.csv(X,"./data/X.csv", row.names = FALSE)
 write.csv(X2,"./data/X2.csv", row.names = FALSE)
